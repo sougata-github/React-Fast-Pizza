@@ -3,11 +3,8 @@ import { useState } from "react";
 import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
 import { createOrder } from "../../services/apiRestaurant";
 import Button from "../../ui/Button";
-
-const isValidPhone = (str) =>
-  /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(
-    str,
-  );
+import { useSelector } from "react-redux";
+import { isValidPhone } from "../../utils/helpers";
 
 const fakeCart = [
   {
@@ -40,7 +37,7 @@ export async function action({ request }) {
   const order = {
     ...data,
     cart: JSON.parse(data.cart),
-    priority: data.priority === "on", //changing to boolean
+    priority: data.priority === "on",
   };
 
   const errors = {};
@@ -60,8 +57,10 @@ export async function action({ request }) {
 }
 
 function CreateOrder() {
+  const username = useSelector((state) => state.user.username);
   const navigation = useNavigation();
   const isSubmitting = navigation.state === "submitting";
+
   // const [withPriority, setWithPriority] = useState(false);
 
   const formErrors = useActionData();
@@ -74,8 +73,14 @@ function CreateOrder() {
 
       <Form method="POST">
         <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center ">
-          <label className="sm:basis-40">First Name</label>
-          <input type="text" name="customer" required className="input grow" />
+          <label className="sm:basis-40">Name</label>
+          <input
+            type="text"
+            name="customer"
+            required
+            className="input grow"
+            defaultValue={username}
+          />
         </div>
 
         <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center">
