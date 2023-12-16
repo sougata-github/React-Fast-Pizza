@@ -51,8 +51,6 @@ function CreateOrder() {
   } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
-  console.log(address);
-
   const isLoadingAddress = addressStatus === "loading";
 
   const navigation = useNavigation();
