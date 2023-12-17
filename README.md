@@ -10,38 +10,30 @@ Welcome to React Fast Pizza, a pizza ordering app built using React.
 
 ## Features
 - **Menu Exploration:**
-  - Browse through a comprehensive pizza menu with listed ingredients.
-  - Add your favorite pizzas to the cart effortlessly.
-
+  Browse through a comprehensive pizza menu with listed ingredients.
+  Add your favorite pizzas to the cart effortlessly.
 - **Convenient Cart Management:**
-  - View and manage your cart from anywhere on the site.
-  - Easily increase or decrease pizza quantity in your cart.
-
+  View and manage your cart from anywhere on the site.
+  Easily increase or decrease pizza quantity in your cart.
 - **Order Tracking:**
-  - Search your order using a unique order ID.
-  - Mark your order as a priority for quick attention.
-
+  Search your order using a unique order ID.
+  Mark your order as a priority for quick attention.
 - **Location Services:**
-  - Get your location with just a click while ordering a pizza.
-
+  Get your location with just a click while ordering a pizza.
 - **Fully Responsive:**
-  - Enjoy a seamless experience on any device.
+  Enjoy a seamless experience on any device.
 
 ## Pages and Sections
 - **Header:**
-  - Displays the company name and includes a search bar for convenient navigation.
-
+  Displays the company name and includes a search bar for convenient navigation.
 - **Pizza Menu:**
-  - Lists all available pizzas with detailed ingredients.
-
+  Lists all available pizzas with detailed ingredients.
 - **Cart Overview:**
-  - Always visible at the bottom for quick access.
-
+  Always visible at the bottom for quick access.
 - **Order Pizza Form:**
-  - A sleek form for placing your pizza order.
-
+  A sleek form for placing your pizza order.
 - **Order Page:**
-  - Displays all relevant order information.
+  Displays all relevant order information.
 
 ## Project Structure
 The project adheres to best React practices with a clean codebase and organized file and folder structure.
