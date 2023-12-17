@@ -1,7 +1,7 @@
 # React Fast Pizza
 
 ## Overview
-Welcome to React Fast Pizza, a sleek pizza ordering app built using React. Enjoy a seamless experience as you explore the world of pizza with our user-friendly interface.
+Welcome to React Fast Pizza, a pizza ordering app built using React. 
 
 ## Live Site Preview
 ![Screenshot (87)](https://github.com/sougata-github/React-Fast-Pizza/assets/102734212/4771e207-15f0-4a43-9cbf-6742ff66b735)
@@ -47,10 +47,9 @@ Welcome to React Fast Pizza, a sleek pizza ordering app built using React. Enjoy
 The project adheres to best React practices with a clean codebase and organized file and folder structure.
 
 ## Technologies Used
-- React
-- React Router for navigation
-- Redux and Redux Toolkit for global state management
-- Tailwind CSS for styling
+- React Router V-6
+- Redux and Redux Toolkit
+- Tailwind CSS
 - Vite as the build tool
 - Vercel for deployment
 
